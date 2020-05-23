@@ -1,1 +1,1 @@
-# Self-leatning
+# Self-learning
