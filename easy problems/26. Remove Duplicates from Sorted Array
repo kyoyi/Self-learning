@@ -1,0 +1,33 @@
+def removeDuplicates(nums):
+    """
+    :type nums: List[int]
+    :rtype: int
+    """
+
+    # j = 0
+    # while j< len(nums)-1:
+    #     i = 0
+    #     while i < len(nums)-1:
+    #         if nums[i] == nums[i+1]:
+    #             nums = nums[0:i] +nums[i+1:]
+    #         i += 1
+    #
+    #     j += 1
+    #
+    # return nums
+
+    if not nums:
+        return 0
+
+    count = 0
+    for i in range(len(nums)):
+        if nums[count] != nums[i]:
+            count += 1
+            nums[count] = nums[i]
+
+    return nums
+
+
+
+
+print(removeDuplicates([1]))
