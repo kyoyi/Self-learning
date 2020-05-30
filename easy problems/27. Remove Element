@@ -19,3 +19,14 @@ class Solution(object):
         
         
         return i
+        
+        '''
+        solution 2
+                
+        while val in nums:
+            nums.remove(val)
+        
+        return  len(nums)
+
+        '''
+        
